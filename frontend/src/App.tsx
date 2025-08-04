@@ -27,6 +27,7 @@ let taskt: Task = {
   status: 1,
 };
 
+// Task component which is a table row
 function Task({ data, onDelete, changeStatus }: TaskProps) {
   const status: string = data.status == 0 ? "pending" : "done";
 
@@ -53,6 +54,7 @@ function Task({ data, onDelete, changeStatus }: TaskProps) {
   );
 }
 
+// Form component to add a Task
 function Form({ uploadTask }: (data: Task) => void) {
   const {
     register,
@@ -123,6 +125,7 @@ function Form({ uploadTask }: (data: Task) => void) {
   );
 }
 
+// Main application component
 function App() {
   const [tasks, setTasks] = useState<Task[]>([]);
 

@@ -27,6 +27,7 @@ export const idSchema = z.object({
 
 export let tasks = new Map<number, Task>();
 
+// Add a task duplicates are allowed
 export function addTask(t: Task): number {
 	t.id = id_max;
 	tasks.set(t.id, t);
@@ -38,6 +39,7 @@ export function getTasks(): Array<Task> {
 	return Array.from(tasks.values());
 }
 
+// Delete a Task
 export function removeTask(id: number) {
 	if (!tasks.has(id)) {
 		throw new Error("Wrong id");
@@ -45,6 +47,7 @@ export function removeTask(id: number) {
 	return tasks.delete(id);
 }
 
+// Toggle status
 export function changeState(id: number) {
 	if (!tasks.has(id)) {
 		throw new Error("Wrong id");
