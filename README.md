@@ -7,13 +7,13 @@ cd test_cfp
 ## Run backend
 * Open a new Terminal
 ``` bash
-cd backend && npm run start
+cd backend && npm i && npm run start
 ```
 
 ## Run frontend 
 * Open a new Terminal
 ``` bash
-cd frontend && npm run dev
+cd frontend && npm i && npm run dev
 ```
 
 ## Tech Stack
