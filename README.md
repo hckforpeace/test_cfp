@@ -1,7 +1,7 @@
 # Installation
 ``` bash
-git clone https://github.com/hckforpeace/CFP_test
-cd CFP_test
+git clone https://github.com/hckforpeace/test_cfp
+cd test_cfp
 ```
 
 ## Run backend
